@@ -1,3 +1,8 @@
+/**
+ * Copyright © Ariya InfoTech(Yuvraj Raulji) All rights reserved.
+ * See COPYING.txt for license details.
+ */
+ 
 <?php
 
 namespace AriyaInfoTech\MultiFlatshipping\Model\Carrier;

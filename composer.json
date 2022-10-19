@@ -1,6 +1,6 @@
 {
     "name": "ariyainfotech/module-multiflatshipping",
-    "description": "Magento 2 Flat Rate Shipping",
+    "description": "This Module Develop By Ariya InfoTech (www.ariyainfotech.com)",
     "require": {
         "php": "~5.5.0|~5.6.0|~7.0.0|7.0.2|7.0.4|~7.0.6|~7.1.0|~7.2.0|~7.3.0|~7.4.0|~8.0|~8.1"
     },
@@ -18,13 +18,16 @@
         }
     },
 	"support": {
-        "email": "help@ariyainfotech.com"
+        "email": "yuvraj@ariyainfotech.com"
     },
-    "authors": [
+     "authors": [
         {
             "name": "Ariya InfoTech",
-            "email": "info@ariyainfotech.com",
-            "homepage": "https://ariyatnfotech.com"
+            "email": "info@ariyainfotech.com"
+        },
+        {
+            "name": "Yuvraj Raulji",
+            "email": "yuvraj@ariyainfotech.com"
         }
     ]
 }
