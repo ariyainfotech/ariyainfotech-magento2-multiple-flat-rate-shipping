@@ -16,7 +16,7 @@ use Magento\Quote\Model\Quote\Address\RateResult\MethodFactory;
 use Magento\Shipping\Model\Carrier\AbstractCarrier;
 use Magento\Shipping\Model\Carrier\CarrierInterface;
 use Magento\Shipping\Model\Rate\ResultFactory;
-use AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate\ItemPriceCalculator;
+use AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate\PriceItemCalc;
 use Psr\Log\LoggerInterface;
 
 class Flatrate5 extends AbstractCarrier implements CarrierInterface
@@ -29,7 +29,7 @@ class Flatrate5 extends AbstractCarrier implements CarrierInterface
     protected $state;
     private $itemPriceCalculator;
 
-    public function __construct(ScopeConfigInterface $scopeConfig, ErrorFactory $rateErrorFactory, LoggerInterface $logger, ResultFactory $rateResultFactory, MethodFactory $rateMethodFactory, ItemPriceCalculator $itemPriceCalculator, Session $session, State $state, array $data = [])
+    public function __construct(ScopeConfigInterface $scopeConfig, ErrorFactory $rateErrorFactory, LoggerInterface $logger, ResultFactory $rateResultFactory, MethodFactory $rateMethodFactory, PriceItemCalc $itemPriceCalculator, Session $session, State $state, array $data = [])
     {
         $this->rateResultFactory = $rateResultFactory;
         $this->rateMethodFactory = $rateMethodFactory;

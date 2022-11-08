@@ -62,66 +62,6 @@
                 <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
                 <handling_type>F</handling_type>
 			</flatrate5>
-			<flatrate6>
-                <active>0</active>
-                <sallowspecific>0</sallowspecific>
-                <model>AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate6</model>
-                <name>Fixed 6</name>
-                <price>5.00</price>
-				<infotext></infotext>
-                <title>Flat Rate</title>
-                <type>I</type>
-                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
-                <handling_type>F</handling_type>
-			</flatrate6>
-			<flatrate7>
-                <active>0</active>
-                <sallowspecific>0</sallowspecific>
-                <model>AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate7</model>
-                <name>Fixed 7</name>
-                <price>5.00</price>
-				<infotext></infotext>
-                <title>Flat Rate</title>
-                <type>I</type>
-                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
-                <handling_type>F</handling_type>
-			</flatrate7>
-			<flatrate8>
-                <active>0</active>
-                <sallowspecific>0</sallowspecific>
-                <model>AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate8</model>
-                <name>Fixed 8</name>
-                <price>5.00</price>
-				<infotext></infotext>
-                <title>Flat Rate</title>
-                <type>I</type>
-                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
-                <handling_type>F</handling_type>
-			</flatrate8>
-			<flatrate9>
-                <active>0</active>
-                <sallowspecific>0</sallowspecific>
-                <model>AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate9</model>
-                <name>Fixed 9</name>
-                <price>5.00</price>
-				<infotext></infotext>
-                <title>Flat Rate</title>
-                <type>I</type>
-                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
-                <handling_type>F</handling_type>
-			</flatrate9>
-			<flatrate10>
-                <active>0</active>
-                <sallowspecific>0</sallowspecific>
-                <model>AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate10</model>
-                <name>Fixed 10</name>
-                <price>5.00</price>
-				<infotext></infotext>
-                <title>Flat Rate</title>
-                <type>I</type>
-                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
-                <handling_type>F</handling_type>
-			</flatrate10>
         </carriers>
     </default>
 </config>

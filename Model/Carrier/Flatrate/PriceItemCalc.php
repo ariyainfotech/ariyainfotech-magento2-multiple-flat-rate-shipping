@@ -9,7 +9,7 @@ namespace AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate;
 
 use Magento\Quote\Model\Quote\Address\RateRequest;
 
-class ItemPriceCalculator
+class PriceItemCalc
 {
     /**
      * @param RateRequest $request
