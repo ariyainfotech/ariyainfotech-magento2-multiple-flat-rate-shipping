@@ -5,9 +5,9 @@
 			<flatrate1>
                 <active>0</active>
                 <sallowspecific>0</sallowspecific>
-                <model>AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate1</model>
+                <model>AriyaInfoTech\MultiMultiFlatshipping\Model\Carrier\Flatrate1</model>
                 <name>Fixed</name>
-                <price>5.00</price>
+                <price>8.00</price>
                 <title>Flat Rate</title>
                 <type>I</type>
                 <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
@@ -17,9 +17,9 @@
 			 <flatrate2>
                 <active>0</active>
                 <sallowspecific>0</sallowspecific>
-                <model>AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate2</model>
+                <model>AriyaInfoTech\MultiMultiFlatshipping\Model\Carrier\Flatrate2</model>
                 <name>Fixed 2</name>
-                <price>5.00</price>
+                <price>8.00</price>
                 <title>Flat Rate</title>
                 <type>I</type>
                 <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
@@ -29,9 +29,9 @@
 			<flatrate3>
                 <active>0</active>
                 <sallowspecific>0</sallowspecific>
-                <model>AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate3</model>
+                <model>AriyaInfoTech\MultiMultiFlatshipping\Model\Carrier\Flatrate3</model>
                 <name>Fixed 3</name>
-                <price>5.00</price>
+                <price>8.00</price>
                 <title>Flat Rate</title>
 				<infotext></infotext>
                 <type>I</type>
@@ -41,9 +41,9 @@
 			<flatrate4>
                 <active>0</active>
                 <sallowspecific>0</sallowspecific>
-                <model>AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate4</model>
+                <model>AriyaInfoTech\MultiMultiFlatshipping\Model\Carrier\Flatrate4</model>
                 <name>Fixed 4</name>
-                <price>5.00</price>
+                <price>8.00</price>
 				<infotext></infotext>
                 <title>Flat Rate</title>
                 <type>I</type>
@@ -53,9 +53,9 @@
 			<flatrate5>
                 <active>0</active>
                 <sallowspecific>0</sallowspecific>
-                <model>AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate5</model>
+                <model>AriyaInfoTech\MultiMultiFlatshipping\Model\Carrier\Flatrate5</model>
                 <name>Fixed 5</name>
-                <price>5.00</price>
+                <price>8.00</price>
 				<infotext></infotext>
                 <title>Flat Rate</title>
                 <type>I</type>

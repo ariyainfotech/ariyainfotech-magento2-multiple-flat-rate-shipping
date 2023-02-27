@@ -3,7 +3,7 @@
     <system>
         <section id="carriers" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
           <group id="flatrate1" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Flat Rate 1</label>
+                <label>Flat Rate One</label>
                 <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -18,7 +18,7 @@
                 </field>
 				<field id="type" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Type</label>
-                    <source_model>AriyaInfoTech\MultiFlatshipping\Model\Config\Source\Flatrate</source_model>
+                    <source_model>AriyaInfoTech\MultiMultiFlatshipping\Model\Config\Source\Flatrate</source_model>
 					<depends><field id="active">1</field></depends>
                 </field>
                 <field id="price" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
@@ -28,7 +28,7 @@
                 </field>
                 <field id="handling_type" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Calculate Handling Fee</label>
-					<source_model>AriyaInfoTech\MultiFlatshipping\Model\Config\Source\HandlingType</source_model>
+					<source_model>AriyaInfoTech\MultiMultiFlatshipping\Model\Config\Source\HandlingType</source_model>
 					<depends><field id="active">1</field></depends>
                 </field>
                 <field id="handling_fee" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="0">
@@ -78,7 +78,7 @@
                 </field>				
             </group>
 			  <group id="flatrate2" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Flat Rate 2</label>
+                <label>Flat Rate Two</label>
                 <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -93,7 +93,7 @@
                 </field>
 				<field id="type" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Type</label>
-                    <source_model>AriyaInfoTech\MultiFlatshipping\Model\Config\Source\Flatrate</source_model>
+                    <source_model>AriyaInfoTech\MultiMultiFlatshipping\Model\Config\Source\Flatrate</source_model>
 					<depends><field id="active">1</field></depends>
                 </field>
                 <field id="price" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
@@ -103,7 +103,7 @@
                 </field>
                 <field id="handling_type" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Calculate Handling Fee</label>
-					<source_model>AriyaInfoTech\MultiFlatshipping\Model\Config\Source\HandlingType</source_model>
+					<source_model>AriyaInfoTech\MultiMultiFlatshipping\Model\Config\Source\HandlingType</source_model>
 					<depends><field id="active">1</field></depends>
                 </field>
                 <field id="handling_fee" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="0">
@@ -153,7 +153,7 @@
                 </field>				
             </group>
 			 <group id="flatrate3" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Flat Rate 3</label>
+                <label>Flat Rate Three</label>
                 <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -168,7 +168,7 @@
                 </field>
 				<field id="type" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Type</label>
-                    <source_model>AriyaInfoTech\MultiFlatshipping\Model\Config\Source\Flatrate</source_model>
+                    <source_model>AriyaInfoTech\MultiMultiFlatshipping\Model\Config\Source\Flatrate</source_model>
 					<depends><field id="active">1</field></depends>
                 </field>
                 <field id="price" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
@@ -178,7 +178,7 @@
                 </field>
                 <field id="handling_type" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Calculate Handling Fee</label>
-					<source_model>AriyaInfoTech\MultiFlatshipping\Model\Config\Source\HandlingType</source_model>
+					<source_model>AriyaInfoTech\MultiMultiFlatshipping\Model\Config\Source\HandlingType</source_model>
 					<depends><field id="active">1</field></depends>
                 </field>
                 <field id="handling_fee" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="0">
@@ -228,7 +228,7 @@
                 </field>
             </group>
 			 <group id="flatrate4" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Flat Rate 4</label>
+                <label>Flat Rate Four</label>
                 <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -243,7 +243,7 @@
                 </field>
 				<field id="type" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Type</label>
-                    <source_model>AriyaInfoTech\MultiFlatshipping\Model\Config\Source\Flatrate</source_model>
+                    <source_model>AriyaInfoTech\MultiMultiFlatshipping\Model\Config\Source\Flatrate</source_model>
 					<depends><field id="active">1</field></depends>
                 </field>
                 <field id="price" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
@@ -253,7 +253,7 @@
                 </field>
                 <field id="handling_type" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Calculate Handling Fee</label>
-					<source_model>AriyaInfoTech\MultiFlatshipping\Model\Config\Source\HandlingType</source_model>
+					<source_model>AriyaInfoTech\MultiMultiFlatshipping\Model\Config\Source\HandlingType</source_model>
 					<depends><field id="active">1</field></depends>
                 </field>
                 <field id="handling_fee" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="0">
@@ -303,7 +303,7 @@
                 </field>
             </group>
 			<group id="flatrate5" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Flat Rate 5</label>
+                <label>Flat Rate Five</label>
                 <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -318,7 +318,7 @@
                 </field>
 				<field id="type" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Type</label>
-                    <source_model>AriyaInfoTech\MultiFlatshipping\Model\Config\Source\Flatrate</source_model>
+                    <source_model>AriyaInfoTech\MultiMultiFlatshipping\Model\Config\Source\Flatrate</source_model>
 					<depends><field id="active">1</field></depends>
                 </field>
                 <field id="price" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
@@ -328,7 +328,7 @@
                 </field>
                 <field id="handling_type" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Calculate Handling Fee</label>
-					<source_model>AriyaInfoTech\MultiFlatshipping\Model\Config\Source\HandlingType</source_model>
+					<source_model>AriyaInfoTech\MultiMultiFlatshipping\Model\Config\Source\HandlingType</source_model>
 					<depends><field id="active">1</field></depends>
                 </field>
                 <field id="handling_fee" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="0">

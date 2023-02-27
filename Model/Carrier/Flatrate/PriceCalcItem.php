@@ -5,11 +5,11 @@
  * See COPYING.txt for license details.
  */
 
-namespace AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate;
+namespace AriyaInfoTech\MultiMultiFlatshipping\Model\Carrier\Flatrate;
 
 use Magento\Quote\Model\Quote\Address\RateRequest;
 
-class PriceItemCalc
+class PriceCalcItem
 {
     /**
      * @param RateRequest $request
@@ -17,7 +17,7 @@ class PriceItemCalc
      * @param int $freeBoxes
      * @return float
      */
-    public function getShippingPricePerItem(
+    public function getPriceShippingPerItem(
         \Magento\Quote\Model\Quote\Address\RateRequest $request,
         $basePrice,
         $freeBoxes
@@ -33,7 +33,7 @@ class PriceItemCalc
      * @return float
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
-    public function getShippingPricePerOrder(
+    public function getPriceShippingPerOrder(
         \Magento\Quote\Model\Quote\Address\RateRequest $request,
         $basePrice,
         $freeBoxes

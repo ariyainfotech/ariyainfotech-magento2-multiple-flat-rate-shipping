@@ -5,7 +5,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace AriyaInfoTech\MultiFlatshipping\Model\Config\Source;
+namespace AriyaInfoTech\MultiMultiFlatshipping\Model\Config\Source;
 
 use Magento\Framework\Option\ArrayInterface;
 

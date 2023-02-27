@@ -5,7 +5,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace AriyaInfoTech\MultiFlatshipping\Model\Carrier;
+namespace AriyaInfoTech\MultiMultiFlatshipping\Model\Carrier;
 
 use Magento\Checkout\Model\Session;
 use Magento\Framework\App\Config\ScopeConfigInterface;
@@ -16,7 +16,7 @@ use Magento\Quote\Model\Quote\Address\RateResult\MethodFactory;
 use Magento\Shipping\Model\Carrier\AbstractCarrier;
 use Magento\Shipping\Model\Carrier\CarrierInterface;
 use Magento\Shipping\Model\Rate\ResultFactory;
-use AriyaInfoTech\MultiFlatshipping\Model\Carrier\Flatrate\PriceItemCalc;
+use AriyaInfoTech\MultiMultiFlatshipping\Model\Carrier\Flatrate\PriceCalcItem;
 use Psr\Log\LoggerInterface;
 
 class Flatrate4 extends AbstractCarrier implements CarrierInterface
@@ -29,7 +29,7 @@ class Flatrate4 extends AbstractCarrier implements CarrierInterface
     protected $state;
     private $itemPriceCalculator;
 
-    public function __construct(ScopeConfigInterface $scopeConfig, ErrorFactory $rateErrorFactory, LoggerInterface $logger, ResultFactory $rateResultFactory, MethodFactory $rateMethodFactory, PriceItemCalc $itemPriceCalculator, Session $session, State $state, array $data = [])
+    public function __construct(ScopeConfigInterface $scopeConfig, ErrorFactory $rateErrorFactory, LoggerInterface $logger, ResultFactory $rateResultFactory, MethodFactory $rateMethodFactory, PriceCalcItem $itemPriceCalculator, Session $session, State $state, array $data = [])
     {
         $this->rateResultFactory = $rateResultFactory;
         $this->rateMethodFactory = $rateMethodFactory;
@@ -51,21 +51,21 @@ class Flatrate4 extends AbstractCarrier implements CarrierInterface
             }
         }
 
-        $freeBoxes = $this->getFreeBoxesCount($request);
+        $freeBoxes = $this->getBoxesCountFree($request);
         $this->setFreeBoxes($freeBoxes);
 
         $result = $this->rateResultFactory->create();
 
-        $shippingPrice = $this->getShippingPrice($request, $freeBoxes);
+        $shippingPrice = $this->getPriceShipping($request, $freeBoxes);
 
         if ($shippingPrice !== false) {
-            $method = $this->createResultMethod($shippingPrice);
+            $method = $this->createMethodResult($shippingPrice);
             $result->append($method);
         }
         return $result;
     }
 
-    private function getFreeBoxesCount(RateRequest $request)
+    private function getBoxesCountFree(RateRequest $request)
     {
         $freeBoxes = 0;
         if ($request->getAllItems()) {
@@ -84,17 +84,17 @@ class Flatrate4 extends AbstractCarrier implements CarrierInterface
         return $freeBoxes;
     }
 
-    private function getShippingPrice(RateRequest $request, $freeBoxes)
+    private function getPriceShipping(RateRequest $request, $freeBoxes)
     {
         $shippingPrice = false;
 
         $configPrice = $this->getConfigData('price');
         if ($this->getConfigData('type') === 'O') {
             // per order
-            $shippingPrice = $this->itemPriceCalculator->getShippingPricePerOrder($request, $configPrice, $freeBoxes);
+            $shippingPrice = $this->itemPriceCalculator->getPriceShippingPerOrder($request, $configPrice, $freeBoxes);
         } elseif ($this->getConfigData('type') === 'I') {
             // per item
-            $shippingPrice = $this->itemPriceCalculator->getShippingPricePerItem($request, $configPrice, $freeBoxes);
+            $shippingPrice = $this->itemPriceCalculator->getPriceShippingPerItem($request, $configPrice, $freeBoxes);
         }
 
         $onlyShippingPrice = $shippingPrice;
@@ -137,7 +137,7 @@ class Flatrate4 extends AbstractCarrier implements CarrierInterface
         return $shippingPrice;
     }
 
-    protected function createResultMethod($shippingPrice)
+    protected function createMethodResult($shippingPrice)
     {
         $method = $this->rateMethodFactory->create();
 
